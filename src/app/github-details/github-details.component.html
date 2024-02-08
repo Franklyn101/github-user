@@ -1,0 +1,17 @@
+<mat-card>
+<div class="cont">
+    
+    @for (user of user; track user.id) {
+       <div class="name">
+        <p>{{user.login}}</p>
+       </div>
+        <div class="imgStyle">
+        <img src={{user.avatar_url}} alt="">
+        </div>
+        <div class="click">
+            <button  [routerLink]="['/show-details/', user.login]"> <p>show more</p></button>
+        </div>
+       
+    }
+</div>
+</mat-card>
