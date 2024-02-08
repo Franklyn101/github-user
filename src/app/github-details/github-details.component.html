@@ -3,10 +3,10 @@
     
     @for (user of user; track user.id) {
        <div class="name">
-        <p>{{user.login}}</p>
+        <!-- <p>{{user.login}}</p> -->
        </div>
         <div class="imgStyle">
-        <img src={{user.avatar_url}} alt="">
+        <img [routerLink]="['/show-details/', user.login]" src={{user.avatar_url}} alt="">
         </div>
         <div class="click">
             <button  [routerLink]="['/show-details/', user.login]"> <p>show more</p></button>

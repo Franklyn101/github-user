@@ -1,5 +1,30 @@
 <p>show-details works!</p>
 
-<p>{{userDetails.login}}</p>
-<img src={{userDetails.avatar_url}} alt="">
-<p>{{userDetails.followers_url}}</p>
+<div class="cont">
+    <p>{{userDetails.login}}</p>
+    <img src={{userDetails.avatar_url}} alt="">
+    <div class="info">
+        <h2>Name:</h2>
+        <p>{{userDetails.name}}</p>
+    </div>
+    <div class="info">
+        <h2>Location:</h2>
+        <p>{{userDetails.location}}</p>
+    </div>
+    <div class="info">
+        <h2>Company:</h2>
+        <p>{{userDetails.company}}</p>
+    </div>
+    <div class="info">
+        <h2>Following:</h2>
+        <p>{{userDetails.following}}</p>
+    </div>
+    <div class="info">
+    <h2>Followers:</h2>
+    <p>{{userDetails.followers}}</p>
+    </div>
+
+
+
+</div>
+         
